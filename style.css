@@ -1,0 +1,165 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --primary-color: #dd9521;
+    --secondary-color: #f4f4f4;
+    --dark-color: #333;
+    --light-color: #fff;
+    --light-blue-grey: #f0f4f8;
+    --blue-grey: #7f8fa4;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem
+}
+
+li {
+    margin-left: 1.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+
+/* HERO SECTION */
+
+.hero {
+    background-image: url('./assets/hero-section.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.schedule-button {
+    margin-top: 2rem;
+}
+
+/* SERVICES SECTION */
+
+section.our-services {
+    padding: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--light-blue-grey);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ABOUT SECTION */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-blue-grey);
+    padding: 2rem;
+}
+
+.about-content {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.why-us-checklist {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.why-us-checklist li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.why-us-checklist li::before {
+    content: url('./assets/placeholder-tick-40x40.png');
+    height: 100%;
+    margin-right: 0.5rem;
+}
